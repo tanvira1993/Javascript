@@ -45,7 +45,7 @@ const deletePropertiesOfObject=(object,key)=>{
     console.log( Object.keys(object))
 
 }
-// deletePropertiesOfObject(obj,"author")
+deletePropertiesOfObject(obj,"author")
 
 
 //Write a JavaScript program to display the reading status 
@@ -89,5 +89,5 @@ const lib = [
         
     }
 
-    console.log(getReadingStatus(lib,'The Road Aheadfhvufheru'));
+    console.log(getReadingStatus(lib,'Walter Isaacson'));
  
