@@ -3,12 +3,12 @@ let param="I am Bangladesh yyyyyyyyyyyyyyyyyyyyyyy"
 const findLongestString=(param)=>{
     let makeArray=param.split(" ")
 
-    let longestWord=makeArray.reduce(function(longest, currentWord) {
+    let longestWord= makeArray.reduce((longest, currentWord) =>{
         if(currentWord.length > longest.length)
            return currentWord;
         else
            return longest;
-      }, "");
+      }, );
         
 
         return longestWord

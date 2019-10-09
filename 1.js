@@ -12,7 +12,18 @@ const findDateAndTime=()=>{
     // var currentdate = new Date();
     // return 'Date '+currentdate.getDate()+':'+(currentdate.getMonth()+1)+':'+currentdate.getFullYear() +"\n"+'Time ' +currentdate.getHours()+':'+currentdate.getMinutes() +':'+currentdate.getSeconds();
     var currentdate = new Date();
+    let particularDay
     let day=currentdate.getDate()
-    return 'Today is :'+ day + ". Current time is : "+currentdate.toLocaleTimeString();
+    if(day===0){
+        particularDay='Sunday'
+    }
+    if(day===2){
+        particularDay='Tuesday'
+    }
+    if(day===4){
+        particularDay='thrusday'
+    }
+
+    return 'Today is :'+ particularDay + ". Current time is : "+currentdate.toLocaleTimeString();
 }
 console.log(findDateAndTime());

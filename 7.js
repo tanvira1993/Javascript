@@ -2,8 +2,8 @@
 let key=123
 let value='hello'
 const objCreate=(key,value)=>{
-    const newObj={}
-    newObj[key]=value
+    // const newObj={}
+    const newObj= {[key]:value}
     return newObj
 }
 console.log(objCreate(key,value))

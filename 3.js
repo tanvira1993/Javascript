@@ -3,7 +3,10 @@
 
 const getDifference=(num)=>{
     if(num>13){
-        return (num-13)*2
+        if(num%2==0 && num%3!==0){
+            return (num-13)*2
+        }
+        
     }
     if(num===13){
         return "both equal"
